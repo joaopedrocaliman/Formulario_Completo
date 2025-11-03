@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    width: 500px; /* Largura para coluna única */
+    width: 500px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding-bottom: 20px;
@@ -34,7 +34,7 @@ form {
 
 .left-column,
 .right-column {
-    width: 100%; /* Ocupa a largura total da coluna única */
+    width: 100%;
     padding: 0;
     margin-bottom: 0;
 }
@@ -117,17 +117,15 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
-/* CORREÇÃO PARA EXIBIÇÃO COMPLETA DO TEXTO NO INPUT FILE */
 .form-group input[type="file"] {
     display: block;
     width: 100%;
-    box-sizing: border-box; /* Ajusta a aparência para forçar a exibição do texto */
+    box-sizing: border-box; 
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     line-height: normal;
 }
-/* FIM DA CORREÇÃO */
 
 input[type="file"]::file-selector-button {
     background-color: #f8f9fa;
