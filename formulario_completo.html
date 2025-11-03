@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Completo</title>
+    <link rel="stylesheet" href="formulario_completo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário Completo</h1>
+        <div class="content-wrapper">
+            <form>
+                <div class="left-column">
+                    <div class="section">
+                        <h2>Campos de Texto</h2>
+                        <div class="form-group">
+                            <label for="texto">Texto:</label>
+                            <input type="text" id="texto" name="texto">
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="senha">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="url">URL:</label>
+                            <input type="url" id="url" name="url">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone">
+                        </div>
+                        <div class="form-group">
+                            <label for="pesquisa">Pesquisa:</label>
+                            <input type="search" id="pesquisa" name="pesquisa">
+                        </div>
+                        <div class="form-group">
+                            <label for="numero">Número:</label>
+                            <input type="number" id="numero" name="numero">
+                        </div>
+                        <div class="form-group">
+                            <label for="intervalo">Intervalo:</label>
+                            <input type="range" id="intervalo" name="intervalo" min="0" max="100" value="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="cor">Cor:</label>
+                            <input type="color" id="cor" name="cor" value="#000000">
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Datas</h2>
+                        <div class="form-group">
+                            <label for="data">Data: dd/mm/aaaa</label>
+                            <input type="date" id="data" name="data">
+                        </div>
+                        <div class="form-group">
+                            <label for="hora">Hora: --:--</label>
+                            <input type="time" id="hora" name="hora">
+                        </div>
+                        <div class="form-group">
+                            <label for="datahora">Data e Hora: dd/mm/aaaa, --:--</label>
+                            <input type="datetime-local" id="datahora" name="datahora">
+                        </div>
+                        <div class="form-group">
+                            <label for="mes">Mês: -------- de ----</label>
+                            <input type="month" id="mes" name="mes">
+                        </div>
+                        <div class="form-group">
+                            <label for="semana">Semana: Semana --, ----</label>
+                            <input type="week" id="semana" name="semana">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="section">
+                        <h2>Escolhas</h2>
+                        <div class="form-group">
+                            <label>Gênero:</label>
+                            <div class="radio-group">
+                                <input type="radio" id="masculino" name="genero" value="masculino" checked>
+                                <label for="masculino">Masculino</label>
+                                <input type="radio" id="feminino" name="genero" value="feminino">
+                                <label for="feminino">Feminino</label>
+                                <input type="radio" id="outro" name="genero" value="outro">
+                                <label for="outro">Outro</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Interesses:</label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia" checked>
+                                <label for="tecnologia">Tecnologia</label>
+                                <input type="checkbox" id="esportes" name="interesses" value="esportes">
+                                <label for="esportes">Esportes</label>
+                                <input type="checkbox" id="arte" name="interesses" value="arte">
+                                <label for="arte">Arte</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pais">País:</label>
+                            <select id="pais" name="pais">
+                                <option value="brasil">Brasil</option>
+                                <option value="portugal">Portugal</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Arquivos</h2>
+                        <div class="form-group">
+                            <label>Upload:</label>
+                            <input type="file" id="arquivo" name="arquivo">
+                        </div>
+                        <div class="form-group">
+                            <label>Campo Oculto:</label>
+                            <input type="hidden" name="campo_oculto" value="valor_secreto">
+                        </div>
+                    </div>
+
+                    <div class="section botoes-section">
+                        <h2>Botões</h2>
+                        <div class="botoes">
+                            <button type="submit" class="enviar">Enviar</button>
+                            <button type="reset" class="limpar">Limpar</button>
+                            <button type="button" class="ajuda">Ajuda</button>
+                            <input type="submit" value="Enviar (input)" class="enviar-input">
+                            <input type="reset" value="Resetar (input)" class="resetar-input">
+                            <button type="button" class="clique-aqui">Clique Aqui</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
